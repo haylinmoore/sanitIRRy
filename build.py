@@ -23,7 +23,7 @@ for line in irrData:
             'prefix': prefix,
             'asn': split[1],
             'ta': "IRRitation",
-            'maxLength': "24" if prefix.find(".") != -1 else "48"
+            'maxLength': 24 if prefix.find(".") != -1 else 48
         })
 
 data['metadata']['counts'] = len(data['roas'])
